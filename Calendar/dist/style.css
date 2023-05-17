@@ -159,7 +159,7 @@ nav ul li:nth-of-type(3) {
 body{
   margin:0;
   background-color:#b7bfcd;
-  background-image:url(https://static.pexels.com/photos/1526/dark-blur-blurred-gradient.jpg);
+  background-color: #f1ebeb;
   background-size:cover;
   background-position:center;
   background-repeat:no-repeat;
@@ -173,6 +173,7 @@ body{
   -webkit-perspective: 1000;
   left:calc(50% - 200px);
   top:calc(50vh - 100px);
+  z-index: 100;
 }
 .card{
   width:100%;
@@ -344,43 +345,31 @@ body{
 /* ================================= */
 /* FOOTER */
 /* ================================= */
+
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
 footer {
-  width: calc(100% - 100px);
-  height: 400px;
+  width: 100%;
+  min-height: 100vh;
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: space-around;
   margin-top: 100px;
 }
 
 .footerContainer {
-  width: calc(100% - 100px);
-  height: 400px;
+  width: 100%;
+  height: 100%;
   display: flex;
   align-items: center;
   justify-content: space-around;
   position: relative;
-}
-.footerContainer::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  right: 0;
-  left: 0;
-  z-index: 1;
-  background-image: linear-gradient(to top, black, transparent);
-}
-
-.footerContainer::after {
-  content: "";
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  right: 0;
-  left: 0;
-  z-index: 1;
-  background-image: linear-gradient(to bottom, black, transparent);
+  scroll-margin-top: 50px;
 }
 
 .footerContact,
@@ -393,11 +382,11 @@ footer {
   z-index: 2;
 }
 .footerContact {
-  color: white;
+  color: #FF6D00;
   font-family: var(--font-family);
 }
 .address {
-  color: white;
+  color: #FF6D00;
   font-family: var(--font-family);
 }
 footer ul {
