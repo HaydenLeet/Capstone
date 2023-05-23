@@ -10,6 +10,7 @@
       src="https://kit.fontawesome.com/5c1c4101a5.js"
       crossorigin="anonymous"
     ></script>
+    <link rel="shortcut icon" href="https://img.icons8.com/3d-fluency/94/dog-footprint.png" alt="dog-footprint" type="image/x-icon">
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="style.css" />
     <script defer src="./script.js"></script>
@@ -19,29 +20,33 @@
     <!-- ========================= -->
     <!-- HAMBURGER -->
     <!-- ========================= -->
+
     <div class="hamburgerContainer">
       <span class="hamburger" id="bar1"></span>
       <span class="hamburger" id="bar2"></span>
       <span class="hamburger" id="bar3"></span>
     </div>
+
     <!-- ============================ -->
     <!-- MOBILE MENU -->
     <!-- ============================ -->
+
     <div class="mobileMenu">
       <div class="menuGrid">
         <div class="gridBox">
           <a href="#"><i class="fa-solid fa-house"></i></a>
         </div>
         <div class="gridBox"><a href="#about">About</a></div>
-        <div class="gridBox"><a href="#">Forms</a></div>
         <div class="gridBox"><a href="./forms.html">Forms</a></div>
         <div class="gridBox"><a href="#">News</a></div>
+        <div class="gridBox"><a href="./dogBreeds.html">Dog Breeds</a></div>
         <div class="gridBox"><a href="#form">Contact</a></div>
       </div>
     </div>
     <!-- =========================== -->
     <!-- NAV -->
     <!-- ========================== -->
+
     <nav>
       <img
         class="logo"
@@ -54,6 +59,7 @@
         <li><a class="animated" href="#">Home</a></li>
         <li id="showAbout">
           <a class="animated" href="#about">About</a>
+
           <div class="dropDownAbout">
             <a href="./board.html">Board of Directors</a>
             <!-- <a href="">Rescue</a>
@@ -61,7 +67,6 @@
           </div>
         </li>
         <li id="showForm">
-          <a class="animated" href="#">Forms</a>
           <a class="animated" href="./forms.html">Forms</a>
 
           <div class="dropDown">
@@ -71,10 +76,16 @@
             <a href="">Volunteer</a>
           </div>
         </li>
-        <li><a class="animated" href="#">News & Events</a></li>
+
+        <li>
+          <a class="animated" href="./Calendar/calender.html">News & Events</a>
+        </li>
+          <li><a class="animated" href="./dogBreeds.html">Dog Breeds</a></li>
         <li><a class="animated" href="#form">Contact</a></li>
       </ul>
     </nav>
+
+    <!-- HERO -->
     <header>
       <div class="heroBox">
         <h1 class="hero rescue">Rescue:</h1>
@@ -94,6 +105,7 @@
         alt=""
         class="dog2 carousel"
       />
+
       <img
         src="./Images/james-barker-v3-zcCWMjgM-unsplash.jpg"
         alt=""
@@ -105,6 +117,7 @@
         class="dog2 carousel"
       />
     </header>
+
     <section id="about">
       <div
         class="aboutContainer box1"
@@ -168,6 +181,7 @@
         </p>
       </div>
     </section>
+
     <section id="form">
       <div
         class="imgContainer"
@@ -194,15 +208,20 @@
         <input type="reset" value="Reset" />
       </form>
     </section>
+
     <footer>
       <div class="footerContainer" data-aos="zoom-in" data-aos-duration="1500">
         <ul>
           <h4>Site Map</h4>
           <li><a class="animated" href="#">Home</a></li>
           <li><a class="animated" href="#about">About</a></li>
-          <li><a class="animated" href="#">Forms</a></li>
           <li><a class="animated" href="./forms.html">Forms</a></li>
-          <li><a class="animated" href="#">News & Events</a></li>
+          <li>
+            <a class="animated" href="./Calendar/calender.html"
+              >News & Events</a
+            >
+              <li><a class="animated" href="./dogBreeds.html">Dog Breeds</a></li>
+          </li>
           <li><a class="animated" href="#form">Contact</a></li>
         </ul>
         <div class="address">
@@ -212,6 +231,7 @@
         <div class="footerContact">
           <h4>Contact</h4>
           <a href="star@stardogrescue.org">star@stardogrescue.org</a>
+
           <div class="social">
             <a class="animated" href="#"
               ><i class="fa-brands fa-facebook"></i
@@ -223,6 +243,7 @@
         </div>
       </div>
     </footer>
+
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
       AOS.init();
